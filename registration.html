@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        form{
+            max-width: 400px;
+            margin: auto;
+            border-radius: 15px;
+            background: rgba(88, 88, 175, 0.507);
+            padding: 20px;
+        }
+        input[type=text], input[type=tel], input[type=email], input[type=password], select{
+            width: 100%;
+            padding: 8px 12px;
+            margin: 4px 0;
+            display: inline-block;
+            border: 1px solid rgb(18, 80, 100);
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        .btn{
+            width: 400px;
+            height: 40px;
+            background-color: white;
+            border-radius: 30px;
+            margin-top: 20px;
+            border: 2px solid rgb(18, 80, 100);
+            color: blue;
+            cursor: pointer;
+            transition: background-color 2s;
+          }
+          .btn:hover {
+              background-color: green;
+          }
+          footer{
+              text-align: center;
+              color: blue;
+          }
+    </style>
+</head>
+<body>
+    <h1>REGISTRATION FORM </h1>
+    <form action="">
+        <table>
+        <tr>
+            <td><label for="fname">First Name:</label></td>
+            <td><input type="text" name="fname" maxlenght="15" minlenght="4" required></td>
+        </tr>
+        <tr>
+            <td><label for="lname">Last Name:</label></td>
+            <td><input type="text" name="lname" maxlenght="15" minlenght="4" required></td>
+        </tr>
+        <tr>
+            <td><label for="pnumber">Phone number:</label></td>
+            <td><input type="tel" name="pnumber" placeholder="123-45-789" pattern="[0-9](3)-[0-9](2)-[0-9](3)-" required></td>
+        </tr>
+       <tr>
+            <td><label for="gender">Gender:</label></td>
+           <td> <select>
+                <option>Male</option>
+                <option>Female</option>
+            </select>        
+        </td>
+        </tr>
+        <tr>
+            <td><label for="country">Select country:</label></td>
+           <td> <select id="country" name="country">
+               <option>Select country</option>
+                <option value="AS">Austraila</option>
+                <option value="Br">Brazil</option>
+                <option value="Ch">China</option>
+                <option value="Dn">Denmark</option>
+                <option value="En">England</option>
+                <option value="Fr">France</option>
+                <option value="Ng">Nigeria</option>
+            </select>        
+        </td>
+        </tr>
+        <tr>
+            <td><label for="state">State:</label></td>
+           <td> <select>
+               <option>Select state</option>
+                <option value="Ab">Abia</option>
+                <option value="Ad">Adamawa</option>
+                <option value="Ai">Akwa-Ibom</option>
+                <option value="An">Anambra</option>
+                <option value="Ba">Bauchi</option>
+                <option value="Bn">Benue</option>
+            </select>        
+        </td>
+        </tr>
+         <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" name="email" placeholder="Enter your emial here" id="" required></td>
+        </tr>
+        <tr>
+            <td><label for="psw">Password:</label></td>
+            <td><input type="password" name="psw" id="" placeholder="Password" pattern="(?*./)(?.*/[a-z])" title="Must contain at least one upper and lower case and at least 8 or more characters"></td>
+        </tr>
+        <tr>
+            <td><label for="psw">Confirm Password:</label></td>
+            <td><input type="password" name="psw" id="" title="Password must match" required></td>
+        </tr>
+        
+    </table>
+    <button class="btn">Continue</button><hr>
+    </form>
+    <div>
+      <footer>Web Page Created by Doc_Biola</footer>
+    </div>
+</body>
+</html>

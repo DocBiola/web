@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body{
+            background-color: green;
+        }
+        form{
+            max-width: 450px;
+            margin: auto;
+            border-radius: 25px;
+            background: whitesmoke;
+            padding: 20px;
+        }
+         input[type=email], input[type=password], select{
+            width: 100%;
+            padding: 8px 12px;
+            margin: 10px 0;
+            display: inline-block;
+            border: 1px solid grey;
+            border-radius: 10px;
+            box-sizing: border-box;
+        }
+        input[type=checkbox]{
+            margin-top: 15px;
+        }
+        h1{
+            text-align: center;
+            color: white;
+        }
+        p{
+            text-align: center;
+            text-decoration: overline;
+            margin-top: 25px;
+        }
+        .btn{
+           width: 450px;
+           height: 40px;
+           background-color: white;
+           border-radius: 30px;
+           margin-top: 30px;
+           border: 2px solid green;
+           color: lightblue;
+           cursor: pointer;
+           transition: background-color 2s;
+         }
+         .btn:hover {
+             background-color: green;
+         }
+         .btn1{
+            width: 450px;
+            height: 40px;
+            background-color: white;
+            border-radius: 30px;
+            margin-top: 30px;
+            border: 2px solid red;
+            color: red;
+            cursor: pointer;
+            transition: background-color 2s;
+            }
+          .btn1:hover {
+              background-color: brown;
+            }
+          .btn2{
+            width: 450px;
+            height: 40px;
+            background-color: white;
+            border-radius: 30px;
+            margin-top: 30px;
+            border: 2px solid blue;
+            color: blue;
+            cursor: pointer;
+            transition: background-color 2s;
+            }
+          .btn2:hover {
+            background-color: rgb(50, 142, 173);
+            }
+          footer{
+            text-align: center;
+            color: white;
+            }
+    </style>
+  
+</head>
+<body>
+    <main>
+    <h1>Log in</h1>
+    <form action="">
+        
+          
+                <label for="email">Email Address</label><br>
+                <input type="email" name="email" placeholder="Enter your Email here" id="" required>
+            
+           
+                <label for="psw">Password</label><br>
+                <input type="password" name="psw" placeholder="Enter your Password here" id=""pattern="(?*./)(?.*/[a-z])" title="Must contain at least one upper and lower case and at least 8 or more characters"><br>
+                
+                
+                <input type="checkbox" name="rmb" id="">
+                <label for="rmb">Remember me</label>
+           
+            
+               <button class="btn">Sign in</button>
+               <p> Or login with</p>
+               <button class="btn1">Google</button> 
+               <button class="btn2">Facebook</button>
+
+           
+      
+    </form>
+    </main>
+    <hr>
+    <div>
+        <footer>Web Page Created by Doc_Biola<br>2022.</footer>
+    </div>
+</body>
+</html>

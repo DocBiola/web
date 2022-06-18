@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+   <link rel="stylesheet" href="style.css">
+    <style>
+        form{
+            max-width: 400px;
+            margin-top: 80px;
+            margin-left: 450px;
+            border-radius: 15px;
+            background: rgb(67, 182, 67);
+            padding: 20px;
+        }
+              
+        nav{
+                background: white;
+                height: 80px;
+                width: 100%;
+                
+          }
+          label.logo{
+            color: green;
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 80px;
+            padding: 0 100px;
+        }
+        nav header{
+            float: right;
+            margin: 20px;
+            color: rgb(49, 24, 24);
+        }
+    
+    input[type=text], input[type=email], select{
+       width: 250px;
+       padding: 8px 12px;
+       margin: 10px 0;
+       display: inline-block;
+       border: 1px solid grey;
+       border-radius: 5px;
+       box-sizing: border-box;
+   }
+   input[type=submit]{
+    width: 300px;
+    height: 40px;
+    background-color: white;
+    border-radius: 15px;
+    margin-top: 30px;
+    margin-left: 50px;
+    border: 2px solid rgb(17, 55, 87);
+    color: rgb(211, 70, 27);
+    cursor: pointer;
+    transition: background-color 2s;
+    font-size: 20px;
+   }
+   textarea{
+       background-color: #dddd;
+       padding: 25px;
+       border: 2px solid transparent;
+       border-radius: 10px;
+       width: 300px;
+       height: 50px;
+   }
+   input[type=submit]:hover {
+    background-color: green;}
+   body{
+       background-color: rgb(91, 214, 111);
+   }
+   footer{
+    text-align: center;
+    color: green;
+   }
+    </style>
+</head>
+<body>
+    <main>
+    <nav>
+        <label class="logo">I4GxZuri</label>
+        <header>
+    <h1>Contact Page</h1>
+        </header>
+</nav>
+    <form action="">
+        <table>
+        <tr>
+            <td><label for="fname">First Name:</label></td>
+            <td><input type="text" name="fname"maxlenght="5" minlenght="3" required></td>
+        </tr>
+        <tr>
+            <td><label for="lname">Last Name:</td>
+            <td><input type="text" name="lname"maxlenght="10" minlenght="5" required></td>
+        </tr>
+        <tr>
+            <td><label for="email">Email:</label></td>
+            <td><input type="email" name="email" placeholder="Enter your email here" id="" required></td>
+        </tr>
+        <br>
+        <tr>
+           
+            
+        </tr>
+    </table>
+    <td><textarea name="">Enter a message here...</textarea></td><br>
+    
+    <input type="submit" value="SUBMIT">
+    </form>
+    <div>
+        <hr>
+        <footer>Web Page Created by Doc_Biola<br>2022.</footer>
+    </div>
+</main>
+</body>
+</html>
